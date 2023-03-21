@@ -1104,7 +1104,7 @@ void printlen(){
 	HAL_Delay(dly);
 	HAL_UART_Transmit_DMA(&huart3, str, len);
 	HAL_Delay(dly);
-	//HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);//setting rs485 in receiving mode
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);//setting rs485 in receiving mode
 	//befehl[]='\0';
 }
 
