@@ -60,8 +60,8 @@ all: main-build
 main-build: 23\ Lifetime_small_v6_vitality.elf secondary-outputs
 
 # Tool invocations
-23\ Lifetime_small_v6_vitality.elf 23\ Lifetime_small_v6_vitality.map: $(OBJS) $(USER_OBJS) C:\Users\PC-Nr37\STM32CubeIDE\workspace_1.9.0\23\ Lifetime_small_v6_vitality\STM32G071K8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "23 Lifetime_small_v6_vitality.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\PC-Nr37\STM32CubeIDE\workspace_1.9.0\23 Lifetime_small_v6_vitality\STM32G071K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="23 Lifetime_small_v6_vitality.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+23\ Lifetime_small_v6_vitality.elf 23\ Lifetime_small_v6_vitality.map: $(OBJS) $(USER_OBJS) C:\Users\PC-Nr37\git\repository\23\ Lifetime_small_v6\23\ Lifetime_small_v6_vitality\STM32G071K8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "23 Lifetime_small_v6_vitality.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\PC-Nr37\git\repository\23 Lifetime_small_v6\23 Lifetime_small_v6_vitality\STM32G071K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="23 Lifetime_small_v6_vitality.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
